@@ -1,6 +1,6 @@
 # FlexHR Timesheet Agent
 
-Automatically generates timesheet entries from your Microsoft 365 activity (Outlook email, calendar, Teams chats, OneNote) using Claude AI, then lets you review and submit them to Frappe HRMS (FlexHR).
+Automatically generates timesheet entries from your Microsoft 365 activity (Outlook email, calendar, Teams chats, OneNote) using Qwen3, then lets you review and submit them to Frappe HRMS (FlexHR).
 
 ## How it works
 
