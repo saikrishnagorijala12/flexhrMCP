@@ -23,9 +23,12 @@ class Config:
     timezone: str = "UTC"
     onedrive_folder: str = ""
     notes_folder: str = ""
+    flexhr_activity_types: list[str] = field(default_factory=list)
 
     @classmethod
     def from_env(cls) -> "Config":
+        raw_types = os.environ.get("FLEXHR_ACTIVITY_TYPES", "")
+        activity_types = [t.strip() for t in raw_types.split(",") if t.strip()] if raw_types else []
         return cls(
             ms_client_id=os.environ["MS_CLIENT_ID"],
             ms_tenant_id=os.environ.get("MS_TENANT_ID", "common"),
@@ -43,4 +46,5 @@ class Config:
             timezone=os.environ.get("TIMEZONE", "UTC"),
             onedrive_folder=os.environ.get("ONEDRIVE_FOLDER", ""),
             notes_folder=os.environ.get("NOTES_FOLDER", ""),
+            flexhr_activity_types=activity_types,
         )

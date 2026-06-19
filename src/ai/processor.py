@@ -28,17 +28,18 @@ Rules:
 9. ACTIVITY TYPE — CRITICAL RULES:
    a. You MUST use the EXACT activity type name from the "Available Activity Types" list. Never invent names.
    b. Common mappings (use these exact strings):
-      - Coding / building / development work  → "Software Development"
-      - Testing / QA work                     → "QA & Testing"
-      - Client calls / client meetings         → "Client Coordination"
-      - Scrum / standup / sprint meetings      → "Scrum & Sprint Execution"
-      - AI or ML related work                 → "AI/ML Activities"
-      - DevOps / cloud / infra work           → "DevOps & Cloud"
-      - Design work                           → "UI/UX Design"
-      - Research or data analysis             → "Research/Data Analysis"
-      - Knowledge transfer / self-learning     → "Continuous Learning and Training"
-      - Internal team meetings (non-client)   → "Internal Meetings"
-   c. Never use "Unassigned / Free Time". Use "Continuous Learning and Training" if no work is evidenced.
+      - Coding / building / development work        → "Software Development"
+      - Testing / QA work                           → "QA & Testing"
+      - Client calls / client meetings              → "Client Coordination"
+      - Gathering or discussing client requirements → "Client Requirements & Solutioning"
+      - Scrum / standup / sprint planning meetings  → "Scrum & Sprint Execution"
+      - DevOps / cloud / infra / CI-CD work         → "DevOps & Cloud"
+      - Deployments / releases / release planning   → "Deployment & Release Management"
+      - Production issues / bug fixes in prod       → "Production Support"
+      - Knowledge transfer / self-learning / courses→ "Continuous Learning and Training"
+      - Internal team meetings (non-client)         → "Internal Meetings"
+   c. Never use a type not present in the "Available Activity Types" list.
+   d. Use "Continuous Learning and Training" if no specific work is evidenced.
 10. PROJECT ASSIGNMENT — CRITICAL RULES:
     a. All client delivery work (coding, testing, client calls, scrums, DevOps, design, etc.)
        must go to the SPECIFIC CLIENT PROJECT code (e.g. PROJ-0034, PROJ-0055), NOT to

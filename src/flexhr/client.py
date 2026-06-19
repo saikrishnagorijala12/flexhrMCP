@@ -23,6 +23,7 @@ class FlexHRClient:
         self._api_username = config.flexhr_api_username
         self._api_password = config.flexhr_api_password
         self._work_status = config.flexhr_work_status
+        self._activity_types_override = config.flexhr_activity_types
 
         self._http = httpx.Client(timeout=30)
         self._logged_in = False
@@ -128,6 +129,8 @@ class FlexHRClient:
     # ── Metadata ──────────────────────────────────────────────────────────────
 
     def get_activity_types(self) -> list[str]:
+        if self._activity_types_override:
+            return self._activity_types_override
         try:
             data = self._get(
                 "/api/resource/Activity Type",
